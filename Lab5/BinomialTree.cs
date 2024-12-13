@@ -125,7 +125,8 @@ namespace Lab5
         public string GetTreeCount()
         {
             int count = trees.Count;
-            return $"Decimal: {count}, Binary: {Convert.ToString(count, 2)}";
+            int nodes = GetTotalNodeCount();
+            return $"Decimal: {count}, Binary: {Convert.ToString(nodes, 2)}";
         }
 
         public void PrintHeap()
